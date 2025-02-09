@@ -29,26 +29,280 @@
     <div class="bubble"></div>
   </div>
 
+
+
+
+
+
+
+
+  <nav class="Menu">
+    <div class="logo-container">
+        <a href="pinicio.html"><img class="logo" src="/imagenes/Logo.png" alt="Vampis"></a>
+    </div>
+    <ul class="Links">
+        <li><a href="pinicio.html">Inicio</a></li>
+        <li><a href="Relajate.html">Relajate</a></li>
+
+        <li><a href="">Monitoreo</a></li>
+        <li><a href="">Canales</a></li>
+        <li><a href="">Robot</a></li>
+        <li><a href="">Instructivo</a></li>
+    </ul>
+
+    <!-- Botón de búsqueda -->
+    <div class="search-container">
+        <i class="fas fa-search" id="icon-search"></i>
+    </div>
+
+    <!-- Menú de hamburguesa para móvil -->
+    <div id="icon-menu" class="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+</nav>
+
+    <!-- Geral aqui está el menu dios mio no lo pierdas denuevo -->
+
+<style>
+    
+
+.Menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.logo-container {
+    flex: 1;
+}
+
+.logo {
+    width: 160px;
+    height: 80px;
+    transition: transform 0.5s ease, filter 0.3s ease;
+    transform-origin: center;
+}
+
+.logo:hover {
+    transform: rotate(180deg); 
+    filter: brightness(1.2); 
+}
+
+
+.content h2 {
+	color: #fff;
+	font-size: 5em;
+	position: absolute;
+	transform: translate(-50%, -50%);
+    margin-left: 270px;
+    margin-top: -40px;
+}
+
+.content h2:nth-child(1) {
+	color: transparent;
+	-webkit-text-stroke: 2px #000000;
+}
+
+.content h2:nth-child(2) {
+	color: #3871ec;
+	animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+	0%,
+	100% {
+		clip-path: polygon(
+			0% 45%,
+			16% 44%,
+			33% 50%,
+			54% 60%,
+			70% 61%,
+			84% 59%,
+			100% 52%,
+			100% 100%,
+			0% 100%
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0% 60%,
+			15% 65%,
+			34% 66%,
+			51% 62%,
+			67% 50%,
+			84% 45%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+		);
+	}
+}
+
+
+
+
+.Links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.Links li {
+    position: relative;
+}
+
+.Links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.Links a:hover {
+    background-color: #0379ff;
+    color: white;
+}
+
+.search-container {
+    display: none;
+    color: #fff;
+}
+
+.menu-toggle {
+    display: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .Links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Links li {
+        margin-bottom: 15px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .Links.show {
+        display: flex;
+    }
+}
+
+#icon-search {
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#icon-search:hover {
+    transform: scale(1.2);
+}
+
+
+    #dark-mode-toggle {
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		background-color: #ddd;
+		color: #111;
+		border: none;
+		border-radius: 5px;
+		padding: 10px 20px;
+		font-size: 16px;
+		cursor: pointer;
+	  }
+	  
+	  #dark-mode-toggle:hover {
+		background-color: #111;
+		
+    }
+	  
+.Links{
+list-style: none;
+display: flex;
+    
+}
+
+.Links li{
+margin: 0 20px;
+
+
+}
+
+.Links a{
+    text-decoration: none;
+    color: #100455e0;
+    font-weight: bold;
+
+font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    transition: 1s;
+    padding: 20px;
+}
+.Links a:hover{
+  color: white;
+background: #000000;
+border-radius: 10px;
+
+
+}
+
+
+.Rayas{
+
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+    margin-left: -150px;
+    }
+</style>
+
+
+
+
+
+
   <div class="wrapper">
 
 
     <div id="card-area">
         <div class="wrapper">
             <div class="box-area"> 
-                <div class="box">
-                    <img src="img/1.png" alt="">
-                    <div class="overlay">
-                        <h3>AUDICIÓN</h3>
-                        <p>Aqui escucharas, distintos sonidos relajantes, que te ayudaran a pasar el tiempo tranquilo.</p>
-                        <a href="#">Accdeder</a>
-                    </div>
-                </div>
+
                 <div class="box">
                     <img src="img/2.jpg" alt="">
                     <div class="overlay">
                         <h3>VISION</h3>
                         <p>Aqui veras distintos videos relajantes que te ayudaran a relajarte mientras el tiempo pasa.</p>
-                        <a href="#">Accdeder</a>
+                        <a href="Vision.html">Accdeder</a>
                     </div>
                 </div>
                 <div class="box">
@@ -56,7 +310,7 @@
                     <div class="overlay">
                         <h3>ENTRETENIMIENTO</h3>
                         <p>Aqui jugaras distintos juegos que te ayudaran a entretenerte mientras el tiempo pase, mientras la app hace su trabajo.</p>
-                        <a href="#">Accdeder</a>
+                        <a href="Directorios.html">Accdeder</a>
                     </div>
                 </div>
             </div>            
